@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 370px;
+  margin-top: 50px;
+}
+.info{
+  text-align: center;
+  letter-spacing: 0.2rem;
+  color: #06d6a0;
+}
+  
+.blinking{
+	animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
+
+@media (max-width: 770px) {
+  .container{
+    margin: 0, 10%;
+  }
+  .image{
+    width: 100%;
+  }
+}
